@@ -1,0 +1,281 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+
+.carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #000033;
+}
+body {
+  color: #fff;
+  text-align: center;
+}
+
+.navbar{
+  background-color: #000033 !important;
+}
+
+.navbar .navbar-brand{
+color: white;
+}
+
+.navbar .navbar-brand: hover{
+color: #FFFFFF;
+}
+
+.navbar .navbar-nav li a{
+ color: #FFFFFF !important;
+}
+
+.navbar-toggler {
+  background-color: #FFFFFF;
+}
+
+/*
+ form style
+ */
+ #mc_embed_signup {
+ border: none; text-align: center; width: 100%;
+ } /* Signup form container */
+
+ .mc-field-group {
+ display: inline-block;
+ } /* positions input field horizontally */
+
+ #mce-EMAIL {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  color: #FFFFFF;
+  bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 7em 9em .7em 1em;
+  width: 90%;
+  background: transparent;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ border-radius: 3px;
+ display: inline-block;
+ margin: 0;
+ } /* Input Styles */
+
+ #mce-NAME {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  color: #FFFFFF;
+  bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 7em 9em .7em 1em;
+  width: 90%;
+  background: transparent;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ border-radius: 3px;
+ display: inline-block;
+ margin: 0;
+ } /* Input Styles */
+
+
+ .clear {
+ display: inline-block;
+ } /* positions button horizontally in line with input */
+
+ .button {
+ font-family: 'Helvetica Neue', Helvetica,  Arial, sans-serif;
+ font-size: 1em;
+ letter-spacing: .03em;
+ color: #FFFFFF;
+ background: transparent;
+ padding: .7em 2em;
+ border: 2px solid #FFFFFF;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ border-radius: 1px;
+ display: inline-block;
+ margin: 0;
+ } /* Button Styles */
+
+ :-webkit-input-placeholder { color:#FFFFFF; } /* WebKit browsers */
+ :-moz-placeholder { color:#FFFFFF; } /* Mozilla Firefox 4 to 18 */
+ ::-moz-placeholder { color:#FFFFFF; } /* Mozilla Firefox 19+ */
+ :-ms-input-placeholder { color: #FFFFFF; } /* Internet Explorer 10+ */
+
+ @media (max-width: 768px) { /* positions input field and button underneath each other with 100% width for tablet and mobile */
+
+ .mc-field-group { display: block; max-width: 100%;
+ }
+ #mce-EMAIL {
+ padding: .7em 0 .7em 1em; width: 96%; margin: 0;
+ }
+ .clear {
+ display: block; width: 100%
+ }
+ .button {
+ width: 100%; margin: .5em 0 0 0;
+ }
+
+
+
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(0,102,0,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #003300;
+  border-bottom-color: rgba(0,102,0,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #003300; /* IE8 proofing */
+  color: rgba(0,102,0,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
